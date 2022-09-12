@@ -1,10 +1,5 @@
 from rest_framework import permissions
 
-# Возможно понадобится сделал на будущее
-# class Admin(permissions.BasePermission):
-#     def has_permission(self, request, view):
-#         return request.user.is_admin and request.user.is_authenticated
-
 
 class AdminOrReadOnly(permissions.BasePermission):
     """Проверка - является ли пользователь администратором."""
